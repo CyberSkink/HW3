@@ -1,8 +1,16 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Gull : MonoBehaviour
 { 
         public float _uselessGullSpeed;
+
+        public enum _gullStates
+    {
+        Idle, Alert, Pissed
+    }
+    public string _gullCurrentState;
+    public string _gullStateString;
         [SerializeField] public AudioClip _gullWarn;
         public SpriteRenderer _gullRenderer;
         [SerializeField] public Sprite _pissedGullSprite;
@@ -24,6 +32,8 @@ public virtual void GullSpeed()
         {
             _gullSounder.PlayOneShot(_gullPissed);
             _gullRenderer.sprite = _pissedGullSprite;
+            _gullStateString = _gullStates.Alert.ToString();
+            Debug.Log(_gullStateString);
         }
     }
         void OnTriggerEnter2D(Collider2D trigger)
@@ -36,6 +46,7 @@ public virtual void GullSpeed()
         {
            _gullSounder.PlayOneShot(_gullWarn);
            _gullRenderer.sprite = _lookGullSprite; 
+
         }
     }
     void OnTriggerExit2D(Collider2D trigger)
