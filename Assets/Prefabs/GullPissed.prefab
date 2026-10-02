@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8124349848299133696}
   m_Layer: 0
   m_Name: GullPissed
-  m_TagString: Gull
+  m_TagString: PissyGull
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -153,6 +153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11ee31447be9fa74284d8a96e07a750f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Gull
+  _uselessGullSpeed: 0
   _gullWarn: {fileID: 8300000, guid: 8e234ce3381ec8143b8f14f892b08497, type: 3}
   _gullRenderer: {fileID: 0}
   _pissedGullSprite: {fileID: 1208040086343421634, guid: db44af81962807549b8229f83d1e17e7, type: 3}

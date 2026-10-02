@@ -1,7 +1,8 @@
 using UnityEngine;
 
 public class Gull : MonoBehaviour
-{
+{ 
+        public float _uselessGullSpeed;
         [SerializeField] public AudioClip _gullWarn;
         public SpriteRenderer _gullRenderer;
         [SerializeField] public Sprite _pissedGullSprite;
@@ -14,19 +15,22 @@ public class Gull : MonoBehaviour
     {
          _gullSounder = GetComponent<AudioSource>();
          _gullRenderer = GetComponent<SpriteRenderer>();
-    }
 
-    // Update is called once per frame
-    void Update()
+
+    }
+public virtual void GullSpeed()
     {
-        
+        if(gameObject.CompareTag("PissyGull"))
+        {
+            _gullSounder.PlayOneShot(_gullPissed);
+            _gullRenderer.sprite = _pissedGullSprite;
+        }
     }
         void OnTriggerEnter2D(Collider2D trigger)
     {
     if (trigger.gameObject.CompareTag("GullAngry"))
         {
-            _gullSounder.PlayOneShot(_gullPissed);
-            _gullRenderer.sprite = _pissedGullSprite;
+        GullSpeed();
         }
         else
         {
@@ -45,4 +49,6 @@ public class Gull : MonoBehaviour
            _gullRenderer.sprite = _neutralGullSprite; 
         }
     }
+    
 }
+
