@@ -280,6 +280,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 8e234ce3381ec8143b8f14f892b08497, type: 3}
     - target: {fileID: 6169716874898900656, guid: 45ab8913169beb3469a3889851e35c22, type: 3}
+      propertyPath: _lookGullSprite
+      value: 
+      objectReference: {fileID: 529994220, guid: 550d60d16c09941b3af6b12d2b513f76, type: 3}
+    - target: {fileID: 6169716874898900656, guid: 45ab8913169beb3469a3889851e35c22, type: 3}
       propertyPath: _neutralGullSprite
       value: 
       objectReference: {fileID: 1543253920, guid: 550d60d16c09941b3af6b12d2b513f76, type: 3}
@@ -327,7 +331,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2712275529964131615, guid: 45ab8913169beb3469a3889851e35c22, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
