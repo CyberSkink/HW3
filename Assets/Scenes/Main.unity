@@ -389,6 +389,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7224833923791119518, guid: 62ed61a66a015964ba693a1ac42cdc68, type: 3}
+      propertyPath: m_Color.g
+      value: 0.732407
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224832755868763763, guid: 62ed61a66a015964ba693a1ac42cdc68, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224832755868763763, guid: 62ed61a66a015964ba693a1ac42cdc68, type: 3}
+      propertyPath: m_Color.g
+      value: 0.01898931
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224832755868763763, guid: 62ed61a66a015964ba693a1ac42cdc68, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
